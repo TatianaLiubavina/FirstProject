@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 //import './globals.css'
 import Link from 'next/link'
 import Home from './page'
+import Script from 'next/script'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -19,13 +20,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-
       <body className={inter.className}>
-      <nav className="nav" style={{textAlign: "left"}}>
-        <Link href="/"> Home </Link>
-        <Link href="/about"> About </Link>
-      </nav>
-      {children}
+        <nav className="nav" style={{textAlign: "left"}}>
+          <Link href="/"> Home </Link>
+          <Link href="/about"> About </Link>
+        </nav>
+        {children}
+        <Script src="/java.js" strategy="afterInteractive" />
       </body>
     </html>
   )
