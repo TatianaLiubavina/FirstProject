@@ -30,7 +30,7 @@ export default function ExperienceSection( {
     techStack 
 }: ExperienceItemProps) {
   return (
-<div> 
+<> 
     <tr>
       <td>
         <p>
@@ -54,9 +54,14 @@ export default function ExperienceSection( {
           </ul>
         )}
         <h4>{position}</h4>
+        <ul>
         {description.map((item, index) => (
-          <p className="links__container" key={index} dangerouslySetInnerHTML={{ __html: item }} />
+          <>
+          <li className="links__container" key={index} dangerouslySetInnerHTML={{ __html: item }} />
+          <br />
+          </>
         ))}
+        </ul>
         {techStack && techStack.length > 0 && (
           <>
             <br />
@@ -75,7 +80,7 @@ export default function ExperienceSection( {
         )}
       </td>
     </tr>
-  </div>
+  </>
   )
 } 
  

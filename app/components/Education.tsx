@@ -11,7 +11,7 @@ interface EducationSectionProps {
 }
 export default function Education({education, date, university, specialization}: EducationSectionProps) {
   return (
-    <div>  
+    <>  
         <section
     className="links"
     style={{
@@ -24,6 +24,6 @@ export default function Education({education, date, university, specialization}:
 <EducationSection date={date} university={university} specialization={specialization} />
     </tbody>
     </table>
-  </section></div>
+  </section></>
   )
 }

@@ -9,7 +9,7 @@ interface SkillsSectionProps {
 
 export default function SkillsSection({skills, link}: SkillsSectionProps) {
   return (
-    <div>  
+    <>  
         {skills.map((skill, index) => (
             <li className="skill" key={index}>
                 <a className="linsk__link" href={link?.[index] || ''}>
@@ -17,6 +17,6 @@ export default function SkillsSection({skills, link}: SkillsSectionProps) {
                 </a>
             </li>
         ))}
-</div>
+</>
   )
 }   

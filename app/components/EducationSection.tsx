@@ -10,7 +10,7 @@ interface EducationSectionProps {
 }
 export default function EducationSection({date, university, specialization}: EducationSectionProps) {
   return (
-    <div>  
+    <>  
         <tr>
           <td>{date}</td>
           <td>
@@ -21,6 +21,6 @@ export default function EducationSection({date, university, specialization}: Edu
             {specialization}
           </td>
         </tr>
-  </div>
+  </>
   )
 }

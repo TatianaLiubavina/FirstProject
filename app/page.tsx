@@ -26,9 +26,6 @@ export default function Home() {
     <p>Руководитель группы разработки</p>
     <section className="links">
       <h2 className="links__header">Контакты</h2>
-      <p>
-        <b>Контакты</b>
-      </p>
       <ul className="links__container">
         <li className="links__link">
           <p className="links__title">Phone number</p>
