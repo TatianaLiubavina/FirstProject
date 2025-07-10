@@ -14,6 +14,7 @@ interface ExperienceItemProps {
     position: string
     description: string[]
     techStack?: string[]
+    keyName?: string
   }
 
 export default function ExperienceSection( {
@@ -27,7 +28,8 @@ export default function ExperienceSection( {
     businessTypes,
     position,
     description,
-    techStack 
+    techStack,
+    keyName = "expirience-description-"
 }: ExperienceItemProps) {
   return (
 <> 
@@ -59,7 +61,7 @@ export default function ExperienceSection( {
         <ul className="links__container">
         {description.map((item, index) => (
           <>
-          <li key={index}>{item}</li>
+          <li key={keyName + index}>{item}</li>
           <br/>
           </>
         ))}

@@ -2,13 +2,13 @@ import React from 'react'
 import '@/app/css/styles.css'
 import '@/app/fonts/DINPro/stylesheet.css'
 
-type ContactsProps = {
-    title: string;
-    subtitle: string;
-    link: string;
-  };  
+interface ContactsProps {
+  contactName: string;
+  subtitle: string;
+  link: string;
+};  
 
-export default function Contacts({title, subtitle, link}: ContactsProps) {
+export default function Contacts({contactName: title, subtitle, link}: ContactsProps) {
   return (
     <>    
       <li className="links__link">

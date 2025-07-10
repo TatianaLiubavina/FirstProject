@@ -3,17 +3,16 @@ import '@/app/css/styles.css'
 import '@/app/fonts/DINPro/stylesheet.css'
 
 interface SocialIconsProps {
-    title: string;
+    iconName: string;
     path: string;
     link: string;
     color: string;
   };  
 
-export default function SocialIcons({title, path, link, color}: SocialIconsProps) {
+export default function SocialIcons({iconName: title, path, link, color}: SocialIconsProps) {
   return (
     <>
    <a aria-label={title} href={link}>
-      <title>{title}</title>
       <svg
         height="200"
         style={{

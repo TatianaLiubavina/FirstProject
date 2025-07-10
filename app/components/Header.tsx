@@ -5,16 +5,15 @@ import Image from 'next/image'
 import { Metadata } from 'next';
 
 type HeaderProps = {
-    title: string;
+    pageTitle: string;
     subtitle: string;
     photo: string;
   };  
   
-export default function Header({title, subtitle, photo}: HeaderProps) {
+export default function Header({pageTitle: title, subtitle, photo}: HeaderProps) {
   return (
     <>
         <meta charSet="UTF-8" />
-  <title>{title}. Резюме</title>
   <div>
     <Image
       alt={title}

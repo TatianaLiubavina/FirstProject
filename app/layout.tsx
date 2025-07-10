@@ -10,8 +10,11 @@ import Resume3 from './resume3/page'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Резюме разработчика',
-  description: 'Резюме разработчика',
+  title: {
+    template: '%s - Резюме разработчика',
+    default: 'Сайт с резюме',
+  },
+  description: '%s - Резюме разработчика',
 }
 
 export default function RootLayout({
