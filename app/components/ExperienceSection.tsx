@@ -52,17 +52,17 @@ export default function ExperienceSection({
           {businessTypes && businessTypes.length > 0 && (
             <ul className="links__container">
               {businessTypes.map((value, index) => (
-                <li key={`${keyName}-${index}`}>{value}</li>
+                <li key={`${keyName}-business-${index}`}>{value}</li>
               ))}
             </ul>
           )}
           <h4>{position}</h4>
           <ul className="links__container">
             {description.map((item, index) => (
-              <>
-                <li key={`${keyName}-${index}`}>{item}</li>
+              <React.Fragment key={`${keyName}-description-${index}`}>
+                <li>{item}</li>
                 <br />
-              </>
+              </React.Fragment>
             ))}
           </ul>
           {techStack && techStack.length > 0 && (
@@ -73,7 +73,7 @@ export default function ExperienceSection({
               </p>
               <p className="links__container">
                 {techStack.map((tech, index) => (
-                  <React.Fragment key={`${keyName}-${index}`}>
+                  <React.Fragment key={`${keyName}-tech-${index}`}>
                     {tech}
                     {index < techStack.length - 1 && <br />}
                   </React.Fragment>

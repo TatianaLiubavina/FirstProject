@@ -23,6 +23,7 @@ export default function RootLayout({
           <Link href="/resume1"> Резюме №1 </Link>
           <Link href="/resume2"> Резюме №2 </Link>
           <Link href="/resume3"> Резюме №3 </Link>
+          <Link href="/animations"> CSS Анимации </Link>
         </nav>
         {children}
       </body>

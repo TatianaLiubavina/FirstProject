@@ -73,6 +73,7 @@ export default function ResumePage({ data }: { data: any }) {
         <tbody>
           {data.experiences.map((experiences: any) => (
             <ExperienceSection
+              key={experiences.keyName}
               keyName={experiences.keyName}
               startDate={experiences.startDate}
               endDate={experiences.endDate}
