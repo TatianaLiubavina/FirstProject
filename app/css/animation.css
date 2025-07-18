@@ -1,0 +1,103 @@
+
+  .box {
+    display: inline-block;
+    padding: 15px 25px;
+    background: linear-gradient(45deg, #cfedfd, #a8d5e5);
+    border-radius: 8px;
+    margin: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+    border: 2px solid transparent;
+  }
+  
+  .btn-color-transition {
+    padding: 12px 24px;
+    background: #e5a84c;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-color-transition:hover {
+    background: #d09332;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .transform-hover {
+    transition: transform 1s ease-in;
+    transform: scale(1);
+  }
+  
+  .transform-hover:hover {
+    transform: scale(1.1);
+  }
+  
+  .shadow-hover {
+    transition: box-shadow 0.3s ease;
+    box-shadow: none;
+  }
+  
+  .shadow-hover:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(+100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .slide-in-right {
+    animation: slideInRight 3s ease-out;
+  }
+  
+  .btn-ripple {
+    position: relative;
+    padding: 12px 24px;
+    /* background: #70b2f0; */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    overflow: hidden;
+    transition: background 1s ease;
+  }
+  
+  .btn-ripple:active {
+    transform: scale(0.95);
+  }
+
+  .btn-3d:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 #4a3f64;
+  }
+  
+  .btn-3d:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #4a3f64;
+  }
+  
+  .btn-3d {
+    padding: 12px 24px;
+    background: #e6c792;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.2s ease;
+    box-shadow: 0 4px 0 #4a3f64;
+  }

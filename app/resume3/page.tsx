@@ -1,10 +1,18 @@
-import React from 'react'
-import Image from 'next/image'
-import '@/app/css/styles.css'
-import resumephoto from '@/public/resumephoto.webp'
+import { resume3 } from "@/app/data/resume3";
+import ResumePage from "@/app/components/ResumePage";
+import { Metadata } from "next";
+import ScrollTop from "@/app/components/ScrollTop";
+
+
+export const metadata: Metadata = {
+  title: "Резюме №3",
+  description: "Резюме №3",
+};
 
 export default function Resume3() {
   return (
-    <div>Resume3</div>
-  )
+    <>
+    <ScrollTop />
+    <ResumePage data={resume3} />
+  </>)
 }

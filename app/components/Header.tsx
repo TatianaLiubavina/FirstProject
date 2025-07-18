@@ -1,34 +1,33 @@
-import React from 'react'
-import '@/app/css/styles.css'
-import '@/app/fonts/DINPro/stylesheet.css'
-import resumephoto from '@/public/resumephoto.webp'
-import Image from 'next/image'
+import React from "react";
+import "@/app/css/styles.css";
+import "@/app/fonts/DINPro/stylesheet.css";
+import "@/app/css/animation.css";
+import Image from "next/image";
 
 type HeaderProps = {
-    title: string;
-    subtitle: string;
-  };  
-  
-export default function Header({title, subtitle}: HeaderProps) {
+  pageTitle: string;
+  subtitle: string;
+  photo: string;
+};
+
+export default function Header({ pageTitle, subtitle, photo }: HeaderProps) {
   return (
-    <div>
-        <meta charSet="UTF-8" />
-  <title>{title}. Резюме</title>
-  <div>
-    <Image
-      alt={title}
-      className="header__avatar"
-      id="primary_photo"
-      src={resumephoto}
-      style={{
-        float: "right",
-      }}
-      width="400"
-      height="400"
-    />
-  </div>
-    <h1>{title}</h1>
-    <p>{subtitle}</p>
-    </div>
-  )
+    <>
+      <meta charSet="UTF-8" />
+      <div className="slide-in-right">
+        <Image
+          alt={pageTitle}
+          className="header__avatar"
+          src={photo}
+          style={{
+            float: "right",
+          }}
+          width="600"
+          height="600"
+        />
+      </div>
+      <h1>{pageTitle}</h1>
+      <p>{subtitle}</p>
+    </>
+  );
 }
