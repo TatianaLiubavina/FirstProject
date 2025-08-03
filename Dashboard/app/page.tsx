@@ -617,57 +617,57 @@ export default function Home() {
         <div className="table-header">
           <div className="table-header-title">
             <div>
-          <h2 className="table-title">All Customers</h2>
-          <p className="active-members">Active Members</p>
-          </div>
-          <div className="search-sort-container">
-            <div className="search-box2">
-              <svg
-                className="search-icon"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
-                  stroke="#7E7E7E"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M21 21L16.65 16.65"
-                  stroke="#7E7E7E"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-              <input type="text" placeholder="Search" />
+              <h2 className="table-title">All Customers</h2>
+              <p className="active-members">Active Members</p>
             </div>
-            <div className="sort-box">
-              Short by : <span className="sort-selected">Newest</span>
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 18 18"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M4.5 6.75L9 11.25L13.5 6.75"
-                  stroke="#3D3C42"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
+            <div className="search-sort-container">
+              <div className="search-box2">
+                <svg
+                  className="search-icon"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                    stroke="#7E7E7E"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M21 21L16.65 16.65"
+                    stroke="#7E7E7E"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+                <input type="text" placeholder="Search" />
+              </div>
+              <div className="sort-box">
+                Short by : <span className="sort-selected">Newest</span>
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.5 6.75L9 11.25L13.5 6.75"
+                    stroke="#3D3C42"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </div>
             </div>
           </div>
-          </div>
-          <div>
+          <div className="table">
             <table>
               <tbody>
                 <tr>
@@ -762,7 +762,11 @@ export default function Home() {
             </table>
           </div>
           <div className="table-footer">
-            <p className="table-phrase">Showing data 1 to 8 of 256K entries</p>
+            <div>
+              <p className="table-phrase">
+                Showing data 1 to 8 of 256K entries
+              </p>
+            </div>
             <div className="pagination">
               <button className="page-btn">&lt;</button>
               <button className="page-btn active">1</button>
