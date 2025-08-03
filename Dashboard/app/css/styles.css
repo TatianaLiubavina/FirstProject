@@ -88,13 +88,20 @@ nav ul li {
   align-items: center;
   gap: 16px;
   margin-bottom: 8px;
-  padding: 12px 32px;
+  padding: 12px 10px;
   font-size: 16px;
   color: #9197b3;
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.2s, color 0.2s;
 }
+
+nav ul li svg {
+  align-self: flex-end;
+
+}
+
+
 
 nav ul li.active,
 nav ul li:hover {
@@ -104,13 +111,17 @@ nav ul li:hover {
 
 nav ul li.active svg path,
 nav ul li:hover svg path {
-  stroke: #fff !important;
-  fill: #fff !important;
+  stroke: #FFFFFF !important;
+}
+
+nav ul li:hover .svg-fill path {
+  fill: #FFFFFF !important;
 }
 
 nav ul li svg {
   min-width: 24px;
   min-height: 24px;
+
 }
 
 nav .user-profile {
@@ -150,6 +161,8 @@ nav button {
 nav button:hover {
   transform: scale(1.1);
 }
+
+
 
 /* === Navigation Components === */
 .nav-position-block {

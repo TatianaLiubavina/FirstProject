@@ -71,6 +71,7 @@ export default function Home() {
               </li>
               <li>
                 <svg
+                className="svg-fill"
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -215,6 +216,7 @@ export default function Home() {
               </li>
               <li>
                 <svg
+                className="svg-fill"
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -257,6 +259,7 @@ export default function Home() {
               </li>
               <li>
                 <svg
+                className="svg-fill"
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
