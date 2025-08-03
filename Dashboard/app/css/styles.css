@@ -1,0 +1,717 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url("../fonts/Poppins-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url("../fonts/Poppins-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url("../fonts/Poppins-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url("../fonts/Poppins-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+/* === Общие стили === */
+body {
+  font-family: "Poppins";
+  background: rgba(226, 236, 249, 0.5);
+  margin: 0;
+  color: #232360;
+  box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.5);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  position: fixed;
+  width: 306px;
+  height: 1198px;
+  left: 0px;
+  top: 0px;
+
+  background: #ffffff;
+  box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+nav > div {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+nav h1 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+nav p {
+  color: #9197b3;
+  font-size: 13px;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 32px;
+  color: #9197b3;
+  font-size: 16px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+nav ul li.active,
+nav ul li:hover {
+  background: #5932ea;
+  color: #fff;
+}
+
+nav ul li.active svg path,
+nav ul li:hover svg path {
+  stroke: #fff !important;
+  fill: #fff !important;
+}
+
+nav ul li svg {
+  min-width: 24px;
+  min-height: 24px;
+}
+
+nav .user-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+nav .user-profile p {
+  margin: 0;
+  font-size: 15px;
+  color: #232360;
+  font-weight: 500;
+}
+
+nav .user-profile p:last-child {
+  color: #9197b3;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+nav button {
+  width: 90%;
+  margin: 16px auto 0 auto;
+  padding: 12px 0;
+  border: none;
+  border-radius: 20px;
+  background: #ffffff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 2px 4px 4px rgba(79, 42, 234, 0.17);
+  transition: background 0.2s;
+}
+
+nav button:hover {
+  transform: scale(1.1);
+}
+
+/* === Контентная часть === */
+main,
+.main-content {
+  margin-left: 290px;
+  padding: 32px 40px 32px 40px;
+}
+
+/* === Поиск и сортировка === */
+.search-sort-container {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 32px;
+  margin: 0 0 0 auto;
+}
+
+.first-block {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin: auto;
+}
+
+.search-box1 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 216px;
+  height: 38px;
+  left: 1129px;
+  top: 40px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 12px;
+  min-width: 220px;
+  box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+  color: #B5B7C0;
+  letter-spacing: -0.01em;
+  font-size: 14px;
+  gap: 10px;
+  padding: 5px;
+  padding-left: 10px;
+}
+
+.search-icon {
+
+}
+
+.search-box2 {
+  display: flex;
+  align-items: center;
+  width: 216px;
+  height: 38px;
+  left: 915px;
+  top: 352px;
+  background: #f9fbff;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+  font-size: 12px;
+  color: #444;
+  letter-spacing: -0.01em;
+gap: 10px;
+}
+
+input {
+  width: 180px;
+
+
+}
+
+.sort-box {
+  display: flex;
+  align-items: center;
+  background: #f7f9fc;
+  border-radius: 12px;
+  padding: 8px 16px;
+  font-size: 12px;
+  color: #888;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+}
+
+.sort-selected {
+  color: #222;
+  font-weight: bold;
+  margin: 0 4px;
+}
+
+.sort-arrow {
+  font-size: 16px;
+  margin-left: 4px;
+}
+
+/* === Карточки статистики === */
+.earning {
+  position: relative;
+  width: 968px;
+  min-height: 151px;
+  left: 377px;
+  top: 117px;
+  padding: 32px 69px;
+
+  display: flex;
+  gap: 50px 50px;
+  background: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+  padding: 32px 40px;
+  margin-bottom: 10px;
+  align-items: flex-start;
+}
+
+.earning-block {
+  display: flex;
+}
+
+.earning-block-svg {
+  display: flex;
+  width: 84px;
+  height: 84px;
+  left: 427px;
+  top: 149px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(201.18deg, #d3ffe7 3.14%, #effff6 86.04%);
+}
+
+.visitors-number {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 100%;
+  /* identical to box height, or 32px */
+  letter-spacing: -0.01em;
+  color: #333333;
+}
+
+.card-avatars {
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.earning .card-avatars img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  margin-left: -8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.earning .card-avatars img:first-child {
+  margin-left: 0;
+}
+
+/* === Таблица === */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #ffffff;
+  border-radius: 30px;
+  margin-bottom: 16px;
+  margin-top: 30px;
+  overflow: hidden;
+  width: 968px;
+  height: 812px;
+  left: 377px;
+  top: 308px;
+}
+
+table tr:first-child td {
+  color: #b5b7c0;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+  padding: 18px 16px;
+}
+
+table td {
+  padding: 18px 16px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #292d32;
+  border-bottom: 1px solid #f0f0f0;
+  letter-spacing: -1%;
+}
+
+table tr:last-child td {
+  border-bottom: none;
+}
+
+table td:last-child {
+  text-align: center;
+}
+
+.status-active {
+  background: rgba(22, 192, 152, 0.38);
+  border: 1px solid #00b087;
+  border-radius: 4px;
+  color: rgba(0, 135, 103, 1);
+  padding: 4px 12px;
+  font-weight: 600;
+  font-size: 14px;
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 80px;
+  height: 29px;
+  left: 1221px;
+  top: 494px;
+}
+
+.status-inactive {
+  background: #ffc5c5;
+  border: 1px solid #df0404;
+  border-radius: 4px;
+  color: rgba(223, 4, 4, 1);
+  padding: 4px 12px;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 80px;
+  height: 29px;
+  left: 1221px;
+  top: 563px;
+}
+
+/* === Пагинация === */
+.pagination {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.page-btn {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 9px;
+  width: 25px;
+  height: 24px;
+  left: 1109px;
+  top: 1056px;
+  background: #f5f5f5;
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: -0.01em;
+  color: #404b52;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.page-btn.active {
+  background: #5932ea;
+  color: rgba(255, 255, 255, 1);
+}
+
+.page-btn:hover:not(.active) {
+  background: #e0e0e0;
+}
+
+.dots {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 1);
+  padding: 0 8px;
+  font-family: Poppins;
+  letter-spacing: -1%;
+}
+
+/* === Адаптивность (по желанию) === */
+@media (max-width: 1100px) {
+  .earning {
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px 16px;
+  }
+  main,
+  .main-content {
+    padding: 24px 8px 24px 8px;
+  }
+  nav {
+    width: 100vw;
+    height: auto;
+    position: static;
+    flex-direction: row;
+    box-shadow: none;
+    padding: 16px 0;
+  }
+}
+
+.status-active:active {
+  background: #ffc5c5;
+  border: 1px solid #df0404;
+  color: #df0404 !important;
+  padding: 6px 9px 6px 9px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+
+.table-title {
+  width: 155px;
+  height: 33px;
+  left: 415px;
+  top: 338px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  /* identical to box height */
+  letter-spacing: -0.01em;
+
+  color: #000000;
+}
+
+.active-members {
+  /* Active Members */
+
+  width: 111px;
+  height: 21px;
+  left: 415px;
+  top: 378px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+  letter-spacing: -0.01em;
+
+  color: #16c098;
+}
+
+.table-header {
+  position: relative;
+  width: 968px;
+  min-height: 812px;
+  left: 377px;
+  top: 308px;
+  padding: 40px;
+
+  background: rgba(255, 255, 255, 1);  
+  box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+  border-radius: 30px;
+}
+
+.table-header-title {
+  display: flex;
+}
+
+.table-footer {
+  display: flex;
+}
+
+.table-phrase {
+  width: 243px;
+  height: 21px;
+  left: 415px;
+  top: 1058px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+  letter-spacing: -0.01em;
+
+  color: #b5b7c0;
+}
+
+.nav-dashboard {
+  display: flex;
+}
+
+.nav-dashboard-svg {
+  width: 37px;
+  height: 37px;
+  left: 28px;
+  top: 37px;
+}
+
+.nav-dashboard-text {
+  width: 150px;
+  height: 39px;
+  left: 73px;
+  top: 36px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 39px;
+  /* identical to box height */
+  letter-spacing: 0.01em;
+
+  color: #000000;
+}
+
+.nav-version {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+  /* identical to box height */
+  letter-spacing: -0.01em;
+
+  color: #838383;
+}
+
+.nav-list ul li {
+  width: 250px;
+  height: 46px;
+  left: 28px;
+  top: 256px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+  letter-spacing: -0.01em;
+
+  color: #9197b3;
+
+  /* Rectangle 33 */
+}
+
+.gradient-window {
+  width: 250px;
+  height: 150px;
+  left: 28px;
+  top: 884px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+
+  background: linear-gradient(107.91deg, #eaabf0 7.37%, #4623e9 95.19%);
+  border-radius: 20px;
+}
+
+.gradient-window-text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  margin-left: auto;
+  margin-right: auto;
+
+  color: #ffffff;
+}
+
+.gradient-window-button {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.01em;
+
+  color: #4925e9;
+}
+
+.hello-phrase {
+  /* Hello Evano 👋🏼, */
+
+  position: absolute;
+  width: 176px;
+  height: 36px;
+  left: 377px;
+  top: 41px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.visitors-block {
+  display: grid;
+  gap: 3px;
+  margin-left: 20px;
+}
+
+.visitors {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+  letter-spacing: -0.01em;
+
+  color: #acacac;
+}
+
+.visitors-percent {
+  display: flex;
+  width: 112px;
+  height: 20px;
+  left: 531px;
+  top: 212px;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+  letter-spacing: -0.01em;
+}
+
+.visitors-percent-color-red {
+  color: #d0004b;
+}
+
+.visitors-percent-color-green {
+  color: #00ac4f;
+}
+
+.nav-position-block {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+/* Добавьте в конец файла */
+svg {
+  display: inline-block;
+  vertical-align: middle;
+}
