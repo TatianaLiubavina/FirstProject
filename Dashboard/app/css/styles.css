@@ -98,10 +98,7 @@ nav ul li {
 
 nav ul li svg {
   align-self: flex-end;
-
 }
-
-
 
 nav ul li.active,
 nav ul li:hover {
@@ -111,17 +108,16 @@ nav ul li:hover {
 
 nav ul li.active svg path,
 nav ul li:hover svg path {
-  stroke: #FFFFFF !important;
+  stroke: #ffffff !important;
 }
 
 nav ul li:hover .svg-fill path {
-  fill: #FFFFFF !important;
+  fill: #ffffff !important;
 }
 
 nav ul li svg {
   min-width: 24px;
   min-height: 24px;
-
 }
 
 nav .user-profile {
@@ -162,8 +158,6 @@ nav button:hover {
   transform: scale(1.1);
 }
 
-
-
 /* === Navigation Components === */
 .nav-position-block {
   margin: 40px auto 0 auto;
@@ -174,6 +168,7 @@ nav button:hover {
 }
 
 .nav-dashboard-svg {
+  margin-right: 5px;
   width: 37px;
   height: 37px;
 }
@@ -188,7 +183,10 @@ nav button:hover {
 }
 
 .nav-version {
-  font-family: "Poppins", sans-serif;
+  margin-top: auto;
+  margin-bottom:10px;
+  margin-left: 5px;
+    font-family: "Poppins", sans-serif;
   font-size: 10px;
   font-weight: 400;
   line-height: 15px;
@@ -205,6 +203,10 @@ nav button:hover {
   line-height: 21px;
   letter-spacing: -0.01em;
   color: #9197b3;
+}
+
+.svg-end {
+  margin-left: auto;
 }
 
 .gradient-window {
@@ -260,17 +262,12 @@ main,
 /* === Header Section === */
 .first-block {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin: auto;
+  justify-content: space-between;
+  margin: 40px 500px 20px 350px;
 }
 
 .hello-phrase {
-  position: absolute;
-  width: 176px;
-  height: 36px;
-  left: 377px;
-  top: 41px;
+  display: flex;
   font-family: "Poppins", sans-serif;
   font-size: 24px;
   font-weight: 400;
@@ -280,7 +277,6 @@ main,
 
 /* === Search Components === */
 .search-box1 {
-  position: absolute;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -293,7 +289,7 @@ main,
   border-radius: 12px;
   min-width: 220px;
   box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
-  color: #B5B7C0;
+  color: #b5b7c0;
   font-size: 14px;
   letter-spacing: -0.01em;
 }
@@ -351,13 +347,13 @@ input {
 
 /* === Statistics Cards === */
 .earning {
-  position: relative;
+  display: flex;
+  margin: 40px 500px 20px 350px;
   width: 968px;
   min-height: 151px;
   left: 377px;
   top: 117px;
   padding: 32px 40px;
-  display: flex;
   gap: 50px;
   align-items: flex-start;
   background: #ffffff;
@@ -445,12 +441,15 @@ input {
 
 /* === Table Section === */
 .table-header {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 30px 10px 10px 10px;
+  margin: 40px 500px 20px 350px;
   width: 968px;
   min-height: 812px;
   left: 377px;
   top: 308px;
-  padding: 40px;
   background: rgba(255, 255, 255, 1);
   box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
   border-radius: 30px;
@@ -458,6 +457,8 @@ input {
 
 .table-header-title {
   display: flex;
+  justify-content: flex-start;
+  margin: 10px 20px 10px 20px;
 }
 
 .table-title {
@@ -487,23 +488,20 @@ input {
 }
 
 table {
-  width: 968px;
-  height: 812px;
-  left: 377px;
-  top: 308px;
-  margin: 30px 0 16px 0;
+  margin-bottom: 20px;
+  width: 100%;
   background: #ffffff;
 }
 
 table tr:first-child td {
-  padding: 18px 16px;
+  padding: 20px 20px;
   font-size: 14px;
   color: #b5b7c0;
   border-bottom: 1px solid #eee;
 }
 
 table td {
-  padding: 18px 16px;
+  padding: 20px 20px;
   font-size: 14px;
   line-height: 21px;
   color: #292d32;
@@ -518,6 +516,8 @@ table tr:last-child td {
 table td:last-child {
   text-align: center;
 }
+
+
 
 /* === Status Badges === */
 .status-active {
@@ -570,7 +570,8 @@ table td:last-child {
 /* === Table Footer === */
 .table-footer {
   display: flex;
-  gap: 400px;
+  justify-content: space-between;
+  margin: 10px 20px 10px 20px;
 }
 
 .table-phrase {
@@ -644,12 +645,12 @@ svg {
     gap: 24px;
     padding: 24px 16px;
   }
-  
+
   main,
   .main-content {
     padding: 24px 8px;
   }
-  
+
   nav {
     width: 100vw;
     height: auto;

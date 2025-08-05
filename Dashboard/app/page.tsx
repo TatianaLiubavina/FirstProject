@@ -1,4 +1,6 @@
 import Image from "next/image";
+import React from "react";
+import Functions from "./components/Functions";
 
 export default function Home() {
   return (
@@ -71,7 +73,7 @@ export default function Home() {
               </li>
               <li>
                 <svg
-                className="svg-fill"
+                  className="svg-fill"
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -97,6 +99,7 @@ export default function Home() {
                 </svg>
                 Product
                 <svg
+                  className="svg-end"
                   width="16"
                   height="16"
                   viewBox="0 0 16 16"
@@ -138,6 +141,7 @@ export default function Home() {
                 </svg>
                 Customers
                 <svg
+                  className="svg-end"
                   width="16"
                   height="16"
                   viewBox="0 0 16 16"
@@ -199,6 +203,7 @@ export default function Home() {
                 </svg>
                 Income
                 <svg
+                  className="svg-end"
                   width="16"
                   height="16"
                   viewBox="0 0 16 16"
@@ -216,7 +221,7 @@ export default function Home() {
               </li>
               <li>
                 <svg
-                className="svg-fill"
+                  className="svg-fill"
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -242,6 +247,7 @@ export default function Home() {
                 </svg>
                 Promote
                 <svg
+                  className="svg-end"
                   width="16"
                   height="16"
                   viewBox="0 0 16 16"
@@ -259,7 +265,7 @@ export default function Home() {
               </li>
               <li>
                 <svg
-                className="svg-fill"
+                  className="svg-fill"
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -281,6 +287,7 @@ export default function Home() {
                 </svg>
                 Help
                 <svg
+                  className="svg-end"
                   width="16"
                   height="16"
                   viewBox="0 0 16 16"
@@ -648,7 +655,12 @@ export default function Home() {
                     strokeLinejoin="round"
                   />
                 </svg>
-                <input type="text" placeholder="Search" />
+                <input
+                  type="text"
+                  id="search-text"
+                  onInput={Functions}
+                  placeholder="Search"
+                />
               </div>
               <div className="sort-box">
                 Short by : <span className="sort-selected">Newest</span>
@@ -671,7 +683,7 @@ export default function Home() {
             </div>
           </div>
           <div className="table">
-            <table>
+            <table id="info-table">
               <tbody>
                 <tr>
                   <td>Customer Name</td>
@@ -783,7 +795,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <script src="java.js"></script>
-    </div>
+      <script src="/java.js" />  
+      </div>
   );
 }
