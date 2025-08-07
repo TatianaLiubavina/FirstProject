@@ -29,7 +29,7 @@
   font-style: normal;
 }
 
-/* === Base Styles === */
+/* общие стили */
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -43,7 +43,7 @@ a {
   text-decoration: none;
 }
 
-/* === Navigation === */
+/* навигация */
 nav {
   position: fixed;
   top: 0;
@@ -158,7 +158,7 @@ nav button:hover {
   transform: scale(1.1);
 }
 
-/* === Navigation Components === */
+/* навигация классы */
 .nav-position-block {
   margin: 40px auto 0 auto;
 }
@@ -184,9 +184,9 @@ nav button:hover {
 
 .nav-version {
   margin-top: auto;
-  margin-bottom:10px;
+  margin-bottom: 10px;
   margin-left: 5px;
-    font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 10px;
   font-weight: 400;
   line-height: 15px;
@@ -250,13 +250,6 @@ nav button:hover {
   border: 2px solid #fff;
   border-radius: 50%;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
-}
-
-/* === Main Content === */
-main,
-.main-content {
-  margin-left: 290px;
-  padding: 32px 40px;
 }
 
 /* === Header Section === */
@@ -517,8 +510,6 @@ table td:last-child {
   text-align: center;
 }
 
-
-
 /* === Status Badges === */
 .status-active {
   display: flex;
@@ -659,4 +650,61 @@ svg {
     box-shadow: none;
     padding: 16px 0;
   }
+}
+
+/* сворачиваем панель навигации */
+nav.collapsed {
+  width: 102px !important;
+  transition: width 0.6s ease;
+}
+
+nav.collapsed .nav-dashboard-text,
+nav.collapsed .nav-version,
+nav.collapsed .gradient-window-text,
+nav.collapsed .gradient-window-button,
+nav.collapsed .user-profile div,
+nav.collapsed .user-profile svg,
+nav.collapsed .svg-end {
+  display: none !important;
+}
+
+nav.collapsed .gradient-window {
+  display: none !important;
+}
+
+nav.collapsed .nav-dashboard {
+  display: flex;
+  justify-content: center;
+}
+
+nav.collapsed .user-profile {
+  justify-content: center;
+  margin-top: 350px;
+  margin-bottom: auto;
+  flex-direction: column;
+  gap: 8px;
+}
+
+nav.collapsed ul li {
+  justify-content: center;
+  align-items: center;
+  font-size: 0;
+}
+
+nav.collapsed .nav-list ul li {
+  width: 46px;
+  height: 46px;
+  justify-content: center;
+  gap: 0px;
+}
+
+/* Показываем только иконки в свернутом состоянии */
+nav.collapsed ul li svg:not(.svg-end) {
+  display: block !important;
+}
+
+/* Анимация для плавного перехода */
+nav,
+nav * {
+  transition: all 0.6s ease;
 }

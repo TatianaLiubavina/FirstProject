@@ -1,14 +1,17 @@
 import Image from "next/image";
 import React from "react";
 import Functions from "./components/Functions";
+import NavMenu from "./components/NavMenu";
 
 export default function Home() {
   return (
     <div>
+      <NavMenu />
       <nav>
         <div className="nav-position-block">
           <div className="nav-dashboard">
             <svg
+              id="toggleButton"
               className="nav-dashboard-svg"
               width="37"
               height="37"
@@ -341,7 +344,7 @@ export default function Home() {
           </div>
         </div>
       </nav>
-      <div>
+      <div className="main-block">
         <div className="first-block">
           <h2 className="hello-phrase">Hello Evano 👋🏼,</h2>
           <div className="search-box1">
@@ -795,7 +798,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <script src="/java.js" />  
-      </div>
+      <script src="/java.js" />
+    </div>
   );
 }
