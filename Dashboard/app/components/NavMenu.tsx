@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 
 export default function NavMenu() {
-  const [isCollapsed, setIsCollapsed] = useState(false);
+  const [isCollapsed, setIsCollapsed] = useState(false); 
 
   useEffect(() => {
     const handleToggle = () => {

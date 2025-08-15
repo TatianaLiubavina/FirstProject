@@ -708,3 +708,12 @@ nav,
 nav * {
   transition: all 0.6s ease;
 }
+
+nav.collapsed ~ div .first-block{
+  margin-left: 150px;
+}
+nav.collapsed ~ div .earning{
+  margin-left: 150px;
+}nav.collapsed ~ div .table-header{
+  margin-left: 150px;
+}
