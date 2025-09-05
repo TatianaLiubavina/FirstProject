@@ -21,7 +21,7 @@ export default function Pagination({
   // Создаем массив номеров страниц для отображения
   const getPageNumbers = () => {
     const pages = [];
-    const maxVisiblePages = 5;
+    const maxVisiblePages = 4;
     
     if (totalPages <= maxVisiblePages) {
       // Если страниц мало, показываем все
