@@ -1,0 +1,252 @@
+.services {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 0px;
+  gap: 40px;
+}
+
+.services-section {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  gap: 77px;
+
+  max-width: 600px;
+  width: 100%;
+  max-height: 310px;
+  height: 100%;
+
+  background: #f3f3f3;
+  border: 1px solid #191a23;
+  box-shadow: 0px 5px 0px #191a23;
+  border-radius: 45px;
+}
+
+.services-section:nth-of-type(2),
+.services-section:nth-of-type(5) {
+  background: #b9ff66;
+}
+
+.services-section:nth-of-type(3),
+.services-section:nth-of-type(6) {
+  background: #191a23;
+}
+
+.services-section-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 93px;
+}
+
+.services-section-text div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  max-width: 221px;
+}
+
+.services-section-text div h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 7px;
+  gap: 10px;
+  background: #b9ff66;
+  border-radius: 7px;
+
+  font-family: var(--font-space-grotesk);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 38px;
+
+  color: #000000;
+}
+
+.services-section:nth-of-type(2) h3,
+.services-section:nth-of-type(3) h3,
+.services-section:nth-of-type(5) h3 {
+  background: rgba(255, 255, 255, 1);
+}
+
+.services-section-text a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 15px;
+  font-family: var(--font-space-grotesk);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.services-section:nth-of-type(3) a,
+.services-section:nth-of-type(6) a {
+  color: #ffffff;
+}
+
+.services-section:nth-of-type(3) .svg-circle,
+.services-section:nth-of-type(6) .svg-circle {
+  fill: white;
+}
+.services-section:nth-of-type(3) .svg-path,
+.services-section:nth-of-type(6) .svg-path {
+  fill: black;
+}
+
+.working-process{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px 100px;
+gap: 30px;
+}
+
+.working-process-card{
+box-sizing: border-box;
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 41px 60px;
+gap: 10px;
+
+background: #F3F3F3;
+border: 1px solid #191A23;
+box-shadow: 0px 5px 0px #191A23;
+border-radius: 45px;
+}
+
+.working-process-card-title{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 352px;
+}
+
+.working-process-card-title div {
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 25px;
+}
+
+.working-process-card-title div h3{
+font-family: var(--font-space-grotesk);
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 38px;
+
+color: #000000;
+}
+
+.working-process-card-title div p{
+
+font-family: var(--font-space-grotesk);
+font-style: normal;
+font-weight: 500;
+font-size: 60px;
+line-height: 77px;
+
+color: #000000;
+}
+.team {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 0px;
+  gap: 40px;
+
+  max-width: 1441px;
+  max-height: 725px;
+}
+
+.team-card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 35px;
+  gap: 10px;
+
+  background: #ffffff;
+  border: 1px solid #191a23;
+  box-shadow: 0px 5px 0px #191a23;
+  border-radius: 45px;
+
+  max-width: 387px;
+  max-height: 331px;
+}
+
+.team-card-block1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+}
+
+.team-card-block1-person {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 0px 76px 0px 0px;
+  gap: 20px;
+}
+
+.team-card-block1-person div h4 {
+  font-family: var(--font-space-grotesk);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+
+  color: #000000;
+}
+
+.team-card-block1-person div p {
+  font-family: var(--font-space-grotesk);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+
+  color: #000000;
+}
+
+.team-card-block1-person svg {
+  top: 0;
+  right: 0;
+}
+
+.team-card-block1 svg {
+  width: 34px;
+  height: 34px;
+  left: 283px;
+  top: 0px;
+}
+.team-block2 {
+  font-family: var(--font-space-grotesk);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+
+  color: #000000;
+}
