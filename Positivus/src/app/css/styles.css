@@ -305,6 +305,8 @@
   max-height: 68px;
   background: #191a23;
   border-radius: 14px;
+  margin-top: 40px;
+  margin-right: 450px;
 
   font-family: var(--font-space-grotesk);
   font-style: normal;
@@ -317,6 +319,7 @@
 }
 
 .contact {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -324,6 +327,7 @@
 }
 
 .contact-block {
+  position: absolute;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -336,10 +340,6 @@
   background: #f3f3f3;
   border-radius: 45px;
 
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 .contact-block-form {
@@ -462,6 +462,7 @@ input[type="radio"] {
   align-items: flex-start;
   padding: 0px 100px;
   gap: 10px;
+  margin-top: 140px;
 }
 
 .footer-block {

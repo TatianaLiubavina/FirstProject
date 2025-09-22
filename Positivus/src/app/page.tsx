@@ -1,12 +1,12 @@
 import React from "react";
-import Image from "next/image";
 import Services from "./components/Services";
 import Team from "./components/Team";
 import WorkingProcess from "./components/WorkingProcess";
+import Slider from "./components/Slider";
 import { servicesData } from "./data/services";
 import { teamData } from "./data/team";
 import { workingProcessData } from "./data/workingProcess";
-
+import { sliderData } from "./data/slider";
 
 export default function Home() {
   return (
@@ -516,7 +516,7 @@ export default function Home() {
           help businesses grow and succeed online. These services include:
         </p>
       </div>
-<Services services={servicesData}/>
+      <Services services={servicesData} />
       <div className="services-proposal">
         <div className="services-proposal-card">
           <div className="services-proposal-card-text">
@@ -597,22 +597,22 @@ export default function Home() {
             </a>
           </div>
           <div>
-          <svg
-            width="1"
-            height="186"
-            viewBox="0 0 1 186"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <line
-              x1="0.5"
-              y1="1.89494e-08"
-              x2="0.499991"
-              y2="186"
-              stroke="white"
-            />
-          </svg>
-</div>
+            <svg
+              width="1"
+              height="186"
+              viewBox="0 0 1 186"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line
+                x1="0.5"
+                y1="1.89494e-08"
+                x2="0.499991"
+                y2="186"
+                stroke="white"
+              />
+            </svg>
+          </div>
           <div>
             <p>
               For a B2B software company, we developed an SEO strategy that
@@ -636,22 +636,22 @@ export default function Home() {
             </a>
           </div>
           <div>
-          <svg
-            width="1"
-            height="186"
-            viewBox="0 0 1 186"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <line
-              x1="0.5"
-              y1="1.89494e-08"
-              x2="0.499991"
-              y2="186"
-              stroke="white"
-            />
-          </svg>
-</div>
+            <svg
+              width="1"
+              height="186"
+              viewBox="0 0 1 186"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line
+                x1="0.5"
+                y1="1.89494e-08"
+                x2="0.499991"
+                y2="186"
+                stroke="white"
+              />
+            </svg>
+          </div>
           <div>
             <p>
               For a national retail chain, we created a social media marketing
@@ -684,7 +684,7 @@ export default function Home() {
           Your Business Goals
         </p>
       </div>
-      <WorkingProcess process={workingProcessData}/>
+      <WorkingProcess process={workingProcessData} />
       <div className="heading">
         <h2>Team</h2>
         <p>
@@ -693,8 +693,8 @@ export default function Home() {
           successful digital marketing strategies
         </p>
       </div>
-      <Team team={teamData}/>
-        <button className="team-button">See all team</button>
+      <Team team={teamData} />
+      <button className="team-button">See all team</button>
       <div className="heading">
         <h2>Testimonials</h2>
         <p>
@@ -703,6 +703,7 @@ export default function Home() {
           to Learn More about Our Digital Marketing Services
         </p>
       </div>
+      <Slider slider={sliderData} />
       <div className="heading">
         <h2>Contact Us</h2>
         <p>
