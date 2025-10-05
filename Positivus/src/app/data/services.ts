@@ -23,16 +23,14 @@ export const servicesData = [
     titleText: "Email",
     titleText2: "Marketing",
 
-    image:
-      "/image/tokyo-sending-messages-from-one-place-to-another 1.png",
+    image: "/image/tokyo-sending-messages-from-one-place-to-another 1.png",
   },
   {
     id: 5,
     titleText: "Content",
     titleText2: "Creation",
 
-    image:
-      "/image/tokyo-many-browser-windows-with-different-information 1.png",
+    image: "/image/tokyo-many-browser-windows-with-different-information 1.png",
   },
   {
     id: 6,

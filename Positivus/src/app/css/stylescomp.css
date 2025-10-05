@@ -3,7 +3,7 @@
   flex-direction: row;
   align-items: flex-start;
   flex-wrap: wrap;
-  padding: 0px 100px;
+  padding: 0px 100px 0px 100px;
   gap: 40px;
 }
 
@@ -220,8 +220,8 @@
   box-shadow: 0px 5px 0px #191a23;
   border-radius: 45px;
 
-  max-width: 387px;
-  max-height: 331px;
+  width: 387px;
+  height: 354px;
 }
 
 .team-card-block {
@@ -230,9 +230,6 @@
   align-items: flex-start;
   padding: 0px;
   gap: 28px;
-
-  max-width: 317px;
-  max-height: 227.82px;
 }
 
 .team-card-block1 {
@@ -247,6 +244,11 @@
   flex-direction: row;
   align-items: flex-end;
   gap: 20px;
+}
+
+.team-card-block1-person .svg-person{
+  max-width: 102.82px;
+  max-height: 102.82px;
 }
 
 .team-card-block1-person div h4 {
@@ -269,18 +271,12 @@
   color: #000000;
 }
 
-.team-card-block1-person svg {
+.team-card-block1 .svg-social-icon {
   top: 0;
   right: 0;
 }
 
-.team-card-block1 svg {
-  width: 34px;
-  height: 34px;
-  left: 283px;
-  top: 0px;
-}
-.team-block2 {
+.team-card-block2 p {
   font-family: var(--font-space-grotesk);
   font-style: normal;
   font-weight: 400;
@@ -293,6 +289,8 @@
 .slider {
   display: flex;
   flex-direction: row;
+  margin-left: 100px;
+
   padding: 76px 100px;
 
   max-width: 1240px;
@@ -300,6 +298,7 @@
 
   background: #191a23;
   border-radius: 45px;
+  overflow: hidden;
 }
 
 .slider-block {
@@ -308,13 +307,14 @@
   align-items: center;
   padding: 0px;
   gap: 124px;
+  scroll-behavior: smooth;
 }
 
 .slider-block1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   padding: 0px;
   gap: 50px;
 
@@ -325,7 +325,7 @@
 .slider-block1-card {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   padding: 0px;
   gap: 20px;
 
@@ -380,9 +380,4 @@
   align-items: center;
   padding: 0px;
   gap: 189px;
-}
-
-.button {
-  cursor: pointer;
-  user-select: none;
 }
